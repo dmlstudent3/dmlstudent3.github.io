@@ -6,5 +6,17 @@
 <body>
 <h1>Welcome!</h1>
 <p>Glad you found my home page.</p>
+  <script>
+    function calculateTip(total) {
+    var tipPercent = 0.15; //Can be changed
+    return (total * tipPercent);
+    }
+
+    var billPreTip = 10;
+    var billTip   = calculateTip(billPreTip);
+    var receipt   = 'Meal: ' + billPreTip + ' Tip: ' + billTip + 
+        ' Total: ' + (billPreTip + billTip);
+    console.log(receipt); 
+  </script>
 </body>
 </html>
